@@ -114,11 +114,47 @@
     </header>
 
     <div id="about">
-      <p>Add what SQL is and why it's important.</p>
-      <p>Add intro video of Mills? + google sheets</p>
-      <p>Add my into jazz project+ download data</p>
-      <p>Add video of jazz project</p>
+    </header>
+
+    <div id="about">
+
+      <div id="googleSearch">
+        <h3>Search Google for Help</h3>
+        <form id="googleSearchForm" action="https://www.google.com/search" method="get" target="_blank">
+          <input type="text" id="searchInput" name="q" placeholder="Search Google...">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+      
+      <script>
+      document.getElementById("googleSearchForm").onsubmit = function() {
+        var searchQuery = document.getElementById("searchInput").value.trim();
+        if (searchQuery === "") {
+          alert("Please enter a search query!");
+          return false;
+        }
+      };
+      </script>
+      
+      <p>SQL (Structured Query Language) is crucial because it provides a foundational understanding of
+         database management, allowing users to efficiently retrieve, manipulate, and analyze data. 
+         Learning SQL empowers beginners to interact with databases effectively, enabling them to 
+         organize and extract valuable insights from vast amounts of information, which is fundamental
+          in various industries and roles.</p>
+      <p>Let's get a quick and easy introduction to SQL through Google Sheets.
+         Download the following csv and upload it in Google Sheets (if you need help, use the Google search bar).
+        Then follow along with the video below!</p>
+        <p>DOWNLOAD <a href="project/jazzsql.csv" download>jazzsql.csv</a></p>
+
+      <p>Utah Jazz Dataset</p>
+ 
+      <p>Now that you have finished the SQL activity, move onto the Resume Help tab!</p>\
+
+      <p>    </p>
+      
     </div>
+
+    <footer>
 
     <footer>
       Copyright © 2024 Haylie Belliston
