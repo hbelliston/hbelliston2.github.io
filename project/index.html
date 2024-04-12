@@ -102,7 +102,18 @@
       width: 100%;
       bottom: 0;
     }
+
+    /* Headshot styling */
+    #profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+    }
   </style>
+  <header>Haylie Belliston Final Project</header>
 </head>
 <body>
 
@@ -113,16 +124,16 @@
     <a href="linkedin.html">LINKEDIN HELP</a>
   </div>
 
-<div id="main">
-  <header>
-    <h1>Haylie Belliston</h1>
-  </header>
+  <div id="main">
+    <header>
+      <img id="profile-picture" src="project\headshot.png" alt="Haylie Belliston">  <h1>Haylie Belliston</h1>
+    </header>
 
-  <div id="about">
-    <h2>About Me</h2>
-    <hr>
-    <p>
-      Hi, I'm Haylie, an information systems student at Utah State University specializing in data engineering.
+    <div id="about">
+      <h2>About Me</h2>
+      <hr>
+
+      <p>Hi, I'm Haylie, an information systems student at Utah State University specializing in data engineering.
        I graduated from Cyprus High School in 2021, where I built lasting friendships, connected with inspiring 
        mentors, and actively participated in various activities. These experiences not only enriched my life but
         also equipped me with valuable skills. I earned certifications in business management leadership and sports
@@ -180,6 +191,26 @@
   </footer>
 
 </div>
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const sendMessageButton = document.querySelector('button[type="button"]');
+    
+    sendMessageButton.addEventListener('click', function() {
+      alert('Your message has been sent! Thank you for reaching out.');
+    });
+  });
+</script>
 
 </body>
 </html>
+

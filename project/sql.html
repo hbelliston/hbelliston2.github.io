@@ -98,6 +98,8 @@
       bottom: 0;
     }
   </style>
+    <header>Haylie Belliston Final Project</header>
+
 </head>
 <body class="w3-black">
 
@@ -136,23 +138,73 @@
       };
       </script>
       
-      <p>SQL (Structured Query Language) is crucial because it provides a foundational understanding of
-         database management, allowing users to efficiently retrieve, manipulate, and analyze data. 
-         Learning SQL empowers beginners to interact with databases effectively, enabling them to 
-         organize and extract valuable insights from vast amounts of information, which is fundamental
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SQL Intro</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <style>
+    /* Your styling goes here */
+  </style>
+</head>
+<body class="w3-black">
+
+  <div class="navbar">
+    <a href="index.html">HOME</a>
+    <a href="sql.html">SQL INTRO</a>
+    <a href="resume.html">RESUME HELP</a>
+    <a href="linkedin.html">LINKEDIN HELP</a>
+  </div>
+
+  <div id="main">
+    <header>
+      <h1>SQL Intro</h1>
+    </header>
+
+    <div id="about">
+      <header>
+
+      </header>
+
+      <div id="about">
+
+        <div id="googleSearch">
+          <h3>Search Google for Help</h3>
+          <form id="googleSearchForm" action="https://www.google.com/search" method="get" target="_blank">
+            <input type="text" id="searchInput" name="q" placeholder="Search Google...">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        
+        <script>
+          document.getElementById("googleSearchForm").onsubmit = function() {
+            var searchQuery = document.getElementById("searchInput").value.trim();
+            if (searchQuery === "") {
+              alert("Please enter a search query!");
+              return false;
+            }
+          };
+        </script>
+        
+        <p>SQL (Structured Query Language) is crucial because it provides a foundational understanding of
+          database management, allowing users to efficiently retrieve, manipulate, and analyze data. 
+          Learning SQL empowers beginners to interact with databases effectively, enabling them to 
+          organize and extract valuable insights from vast amounts of information, which is fundamental
           in various industries and roles.</p>
-      <p>Let's get a quick and easy introduction to SQL through Google Sheets.
-         Download the following csv and upload it in Google Sheets (if you need help, use the Google search bar).
-        Then follow along with the video below!</p>
+        <p>Let's get a quick and easy introduction to SQL through Google Sheets.
+          Download the following csv and upload it in Google Sheets (if you need help, use the Google search bar).
+          Then follow along with the video below!</p>
         <p>DOWNLOAD <a href="project/jazzsql.csv" download>jazzsql.csv</a></p>
 
-      <p>Utah Jazz Dataset</p>
- 
-      <p>Now that you have finished the SQL activity, move onto the Resume Help tab!</p>\
+<iframe id="kaltura_player" type="text/javascript"
+  src="https://cdnapisec.kaltura.com/p/1530551/embedPlaykitJs/uiconf_id/51947332?iframeembed=true&entry_id=1_5dgj3r2q&config[provider]={"widgetId":"1_gylmel19"}&config[playback]={"startTime":0}"
+  style="width: 400px;height: 285px;border: 0;" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" title="Utah Sheets Jazz Analytics: SQL in Google Sheets"></iframe>
 
-      <p>    </p>
-      
-    </div>
+        <p>Now that you have finished the SQL activity, move onto the Resume Help tab!</p>
+        
+      </div>
 
     <footer>
 
