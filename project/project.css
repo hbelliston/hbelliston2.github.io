@@ -1,12 +1,10 @@
-body, h1, h2, h3, h4, h5, h6 {
+body {
 	font-family: "Montserrat", sans-serif;
 	margin: 0;
 	padding: 0;
 	color: #fff;
-  }
-  
-  body {
-	background-color: #222; 
+	text-align: center;  /* Center the body content */
+	background-color: #222;
   }
   
   .navbar {
@@ -14,7 +12,7 @@ body, h1, h2, h3, h4, h5, h6 {
 	background-color: #222;
 	overflow: hidden;
 	display: flex;
-	justify-content: center; 
+	justify-content: center;
   }
   
   .navbar a {
@@ -26,11 +24,11 @@ body, h1, h2, h3, h4, h5, h6 {
   }
   
   .navbar a:hover {
-	background-color: #fefe00; 
+	background-color: #fefe00;
   }
   
   #main {
-	margin: 0 auto; 
+	margin: 0 auto;
 	max-width: 800px;
   }
   
@@ -81,7 +79,7 @@ body, h1, h2, h3, h4, h5, h6 {
   
   .skill .bar {
 	height: 28px;
-	background-color: #fefe00; 
+	background-color: #fefe00;
 	margin-top: 5px;
   }
   
@@ -93,7 +91,14 @@ body, h1, h2, h3, h4, h5, h6 {
 	position: fixed;
 	width: 100%;
 	bottom: 0;
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr auto; /* Defines columns: main content, connect section */
+		align-items: flex-end; /* Aligns content to the bottom */
+	  }
   }
+  
   
   #profile-picture {
 	width: 150px;
