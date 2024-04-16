@@ -4,104 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LinkedIn Help</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <style>
-    body, h1, h2, h3, h4, h5, h6 {
-      font-family: "Montserrat", sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #fff; 
-    }
-
-    body {
-      background-color: #222; 
-    }
-
-    .navbar {
-      width: 100%;
-      background-color: #222;
-      overflow: hidden;
-      display: flex;
-    }
-
-    .navbar a {
-      flex: 1;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      color: white;
-    }
-
-    .navbar a:hover {
-      background-color: #555;
-    }
-
-    #main {
-      margin-left: 120px;
-    }
-
-    @media only screen and (max-width: 600px) {
-      .navbar {
-        flex-direction: column;
-      }
-      .navbar a {
-        width: 100%;
-      }
-      #main {
-        margin-left: 0;
-      }
-    }
-
-    header {
-      text-align: center;
-      padding: 20px;
-    }
-
-    #about {
-      text-align: center;
-      padding: 40px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-top: 20px;
-      border-radius: 5px;
-    }
-
-    #about h2 {
-      color: #555;
-    }
-
-    #about hr {
-      width: 200px;
-      border: 0;
-      height: 2px;
-      background-color: #555;
-      margin: 15px auto;
-    }
-
-    #about p {
-      color: #666;
-      line-height: 1.6;
-    }
-
-    #about h3 {
-      color: #555;
-      padding-top: 16px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #222;
-      color: white;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-  </style>
-    <header>Haylie Belliston Final Project</header>
-
-  <script src="script.js"></script>
-
+  <link rel="stylesheet" href="project.css">
+  <header>Haylie Belliston Final Project</header>
 </head>
 <body>
 
@@ -118,7 +22,24 @@
     </header>
 
     <div id="about">
-      <iframe src="project\LinkedIn Profile Handout.pdf" width="100%" height="600px"></iframe>
+      <object
+	data="project\LinkedIn Profile Handout.pdf"
+	type="application/pdf"
+	width="100%"
+	height="100%"
+>
+	<iframe
+		src="project\LinkedIn Profile Handout.pdf"
+		width="100%"
+		height="100%"
+		style="border: none"
+	>
+		<p>
+			Your browser does not support PDFs.
+			<a href="project\LinkedIn Profile Handout.pdf">Download the PDF</a>
+		</p>
+	</iframe>
+</object>
     </div>
 
     <div id="connect">
@@ -132,6 +53,7 @@
       Copyright © 2024 Haylie Belliston
     </footer>
   </div>
-    
+<script src="addition.js"></script>
+
 </body>
-    </html>
+</html>

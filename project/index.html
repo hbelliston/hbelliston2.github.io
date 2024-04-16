@@ -5,114 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Haylie Belliston</title>
   <link rel="stylesheet" href="project.css">
-  <style>
-    body, h1, h2, h3, h4, h5, h6 {
-      font-family: "Montserrat", sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #fff; /* Change text color to white */
-    }
-
-    body {
-      background-color: #222; /* Change background color to dark gray */
-    }
-
-    .navbar {
-      width: 100%;
-      background-color: #222;
-      overflow: hidden;
-      display: flex;
-    }
-
-    .navbar a {
-      flex: 1;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      color: white;
-    }
-
-    .navbar a:hover {
-      background-color: #555;
-    }
-
-    #main {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 800px; /* Center the content within a max-width */
-    }
-
-    header {
-      text-align: center;
-      padding: 20px;
-    }
-
-    #about {
-      text-align: center; /* Center the content within #about */
-      padding: 40px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      margin-top: 20px;
-      border-radius: 5px;
-    }
-
-    #about h2 {
-      color: #555;
-    }
-
-    #about hr {
-      width: 200px;
-      border: 0;
-      height: 2px;
-      background-color: #555;
-      margin: 15px auto;
-    }
-
-    #about p {
-      color: #666;
-      line-height: 1.6;
-    }
-
-    #about h3 {
-      color: #555;
-      padding-top: 16px;
-    }
-
-    .skill {
-      margin-bottom: 20px;
-    }
-
-    .skill p {
-      margin: 0;
-      color: white;
-    }
-
-    .skill .bar {
-      height: 28px;
-      background-color: white;
-      margin-top: 5px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #222;
-      color: white;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-
-    /* Headshot styling */
-    #profile-picture {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      position: absolute;
-      top: 15px;
-      left: 15px;
-    }
-  </style>
   <header>Haylie Belliston Final Project</header>
 </head>
 <body>
@@ -191,25 +83,7 @@
   </footer>
 
 </div>
-<script>
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const sendMessageButton = document.querySelector('button[type="button"]');
-    
-    sendMessageButton.addEventListener('click', function() {
-      alert('Your message has been sent! Thank you for reaching out.');
-    });
-  });
-</script>
+  <script src="addition.js"></script>
 
 </body>
 </html>
