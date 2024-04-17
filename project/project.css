@@ -1,110 +1,110 @@
 body {
-	font-family: "Montserrat", sans-serif;
-	margin: 0;
-	padding: 0;
-	color: #fff;
-	text-align: center;  /* Center the body content */
-	background-color: #222;
-  }
-  
-  .navbar {
-	width: 100%;
-	background-color: #222;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-  }
-  
-  .navbar a {
-	flex: 1;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	color: white;
-  }
-  
-  .navbar a:hover {
-	background-color: #fefe00;
-  }
-  
-  #main {
-	margin: 0 auto;
-	max-width: 800px;
-  }
-  
-  header {
-	text-align: center;
-	padding: 20px;
-  }
-  
-  #about {
-	text-align: center;
-	padding: 40px;
-	background-color: #fff;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	margin: 20px auto;
-	border-radius: 5px;
-  }
-  
-  #about h2 {
-	color: #555;
-  }
-  
-  #about hr {
-	width: 200px;
-	border: 0;
-	height: 2px;
-	background-color: #555;
-	margin: 15px auto;
-  }
-  
-  #about p {
-	color: #666;
-	line-height: 1.6;
-  }
-  
-  #about h3 {
-	color: #555;
-	padding-top: 16px;
-  }
-  
-  .skill {
-	margin-bottom: 20px;
-  }
-  
-  .skill p {
-	margin: 0;
-	color: white;
-  }
-  
-  .skill .bar {
-	height: 28px;
-	background-color: #fefe00;
-	margin-top: 5px;
-  }
-  
-  footer {
-	text-align: center;
-	padding: 20px;
-	background-color: #222;
-	color: white;
-	position: fixed;
-	width: 100%;
-	bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background-color: #222;
+}
 
-	.container {
-		display: grid;
-		grid-template-columns: 1fr auto; /* Defines columns: main content, connect section */
-		align-items: flex-end; /* Aligns content to the bottom */
-	  }
-  }
-  
-  
-  #profile-picture {
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	position: absolute;
-	top: 15px;
-	left: 15px;
-  }
+.navbar {
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar a {
+    flex: 1;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #fefe00;
+}
+
+#main {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    margin-bottom: 20px;
+}
+
+#about {
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+#about h2 {
+    color: #fefe00;
+    margin-bottom: 20px;
+}
+
+#about hr {
+    width: 200px;
+    border: 0;
+    height: 2px;
+    background-color: #fefe00;
+    margin: 20px auto;
+}
+
+#about p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill p {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.skill .bar {
+    height: 28px;
+    background-color: #fefe00;
+    margin-top: 5px;
+    border-radius: 14px;
+    transition: width 0.6s ease;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    flex-shrink: 0; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+}
+
+.skill:hover .bar {
+    width: 100%;
+}
