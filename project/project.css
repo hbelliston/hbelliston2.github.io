@@ -1,110 +1,136 @@
 body {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    background-color: #222;
-}
-
-.navbar {
-    width: 100%;
-    background-color: #222;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-}
-
-.navbar a {
-    flex: 1;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: white;
-    transition: background-color 0.3s ease;
-}
-
-.navbar a:hover {
-    background-color: #fefe00;
-}
-
-#main {
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    margin-bottom: 20px;
-}
-
-#about {
-    text-align: center;
-    padding: 40px;
-    background-color: #333;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    margin: 20px auto;
-    border-radius: 8px;
-}
-
-#about h2 {
-    color: #fefe00;
-    margin-bottom: 20px;
-}
-
-#about hr {
-    width: 200px;
-    border: 0;
-    height: 2px;
-    background-color: #fefe00;
-    margin: 20px auto;
-}
-
-#about p {
-    color: #aaa;
-    line-height: 1.6;
-}
-
-.skill {
-    margin-bottom: 20px;
-}
-
-.skill p {
-    margin: 0;
-    color: white;
-    font-weight: bold;
-}
-
-.skill .bar {
-    height: 28px;
-    background-color: #fefe00;
-    margin-top: 5px;
-    border-radius: 14px;
-    transition: width 0.6s ease;
-}
-
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    color: white;
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    flex-shrink: 0; 
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: flex-end;
-    position: relative;
-    z-index: 2;
-}
-
-.skill:hover .bar {
-    width: 100%;
-}
+	font-family: "Montserrat", sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+	background-color: #222;
+  }
+  
+  .navbar {
+	width: 100%;
+	background-color: #222;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 2;
+  }
+  
+  .navbar a {
+	flex: 1;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: white;
+	transition: background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+	background-color: #fefe00;
+  }
+  
+  #main {
+	margin: 0 auto;
+	max-width: 800px;
+  }
+  
+  header {
+	text-align: center;
+	padding: 20px;
+	background-color: #222;
+	margin-bottom: 20px;
+  }
+  
+  #about {
+	text-align: center;
+	padding: 40px;
+	background-color: #333;
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+	margin: 20px auto;
+	border-radius: 8px;
+  }
+  
+  #about h2 {
+	color: #fefe00;
+	margin-bottom: 20px;
+  }
+  
+  #about hr {
+	width: 200px;
+	border: 0;
+	height: 2px;
+	background-color: #fefe00;
+	margin: 20px auto;
+  }
+  
+  #about p {
+	color: #aaa;
+	line-height: 1.6;
+  }
+  
+  .skill {
+	margin-bottom: 20px;
+  }
+  
+  .skill p {
+	margin: 0;
+	color: white;
+	font-weight: bold;
+  }
+  
+  .skill .bar {
+	height: 28px;
+	background-color: #fefe00;
+	margin-top: 5px;
+	border-radius: 14px;
+	transition: width 0.6s ease;
+  }
+  
+  .resume-images {
+	/* Add styles for the resume image container here */
+	display: flex;
+	justify-content: center; /* Center the images horizontally */
+	margin: 20px auto; /* Add some margin for spacing */
+  }
+  
+  .resume-images img {
+	/* Add styles for individual resume images here */
+	width: 200px; /* Set a width for the images */
+	margin: 10px; /* Add some margin between images */
+  }
+  
+  footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #222;
+	color: white;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	flex-shrink: 0;
+  }
+  
+  .container {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: flex-end;
+	position: relative;
+	z-index: 2;
+  }
+  
+  .skill:hover .bar {
+	width: 100%;
+  }
+  
+ 
+  .linkedin-profile-images {
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: center; 
+	margin: 20px auto; 
+  }
+  
+  .linkedin-profile-images img {
+	width: 150px; 
+	margin: 5px; 
+  }
+  
