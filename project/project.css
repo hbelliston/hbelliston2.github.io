@@ -120,7 +120,17 @@ body {
   .skill:hover .bar {
 	width: 100%;
   }
+  @media (max-width: 768px) {
+	/* Styles for mobile devices */
+	.navbar a {
+	  flex: none; /* Make navigation items stack vertically */
+	  padding: 10px;
+	}}
   
+	#main {
+	  max-width: 100%; /* Set max-width to 100% for full viewport width */
+	}  
+
  
   .linkedin-profile-images {
 	display: flex;
