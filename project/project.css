@@ -85,19 +85,6 @@ body {
 	transition: width 0.6s ease;
   }
   
-  .resume-images {
-	/* Add styles for the resume image container here */
-	display: flex;
-	justify-content: center; /* Center the images horizontally */
-	margin: 20px auto; /* Add some margin for spacing */
-  }
-  
-  .resume-images img {
-	/* Add styles for individual resume images here */
-	width: 200px; /* Set a width for the images */
-	margin: 10px; /* Add some margin between images */
-  }
-  
   footer {
 	text-align: center;
 	padding: 20px;
@@ -120,27 +107,15 @@ body {
   .skill:hover .bar {
 	width: 100%;
   }
+  
   @media (max-width: 768px) {
-	/* Styles for mobile devices */
 	.navbar a {
-	  flex: none; /* Make navigation items stack vertically */
+	  flex: none; 
 	  padding: 10px;
 	}}
   
 	#main {
-	  max-width: 100%; /* Set max-width to 100% for full viewport width */
+	  max-width: 100%;
 	}  
 
  
-  .linkedin-profile-images {
-	display: flex;
-	flex-wrap: wrap; 
-	justify-content: center; 
-	margin: 20px auto; 
-  }
-  
-  .linkedin-profile-images img {
-	width: 150px; 
-	margin: 5px; 
-  }
-  
